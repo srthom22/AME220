@@ -1,0 +1,37 @@
+body{
+  background-color: #FAFAFF;
+  color: #1C1C1C;
+}
+.imageSection{
+  max-height: 500px;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #DADDD8;
+  border-radius: 15px;
+}
+
+.buttonSection{
+  padding: 20px;
+  text-align: center;
+}
+
+.pic{
+  height: 500px;
+  border-radius: 20px;
+}
+
+h1{
+  text-align: center;
+}
+
+button{
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:hover{
+  background-color: #93E1D8;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Slideshow</h1>
+
+<div class="imageSection">
+  <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg" style="width:100%">
+  <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg" style="width:100%">
+  <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg" style="width:100%">
+</div>
+
+<div class="buttonSection">
+  <button class="button" onclick="currentDiv(1)">1</button>
+  <button class="button" onclick="currentDiv(2)">2</button>
+  <button class="button" onclick="currentDiv(3)">3</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var pictures = document.getElementsByClassName("pic");
+  for (var i = 0; i < pictures.length; i++) {
+    pictures[i].style.display = "none";
+  }
+  pictures[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>
